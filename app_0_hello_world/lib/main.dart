@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(WelcomeWidget());
+void main() => runApp(buildMaterialApp());
+
+Widget buildMaterialApp() {
+  return MaterialApp(
+    title: "Welcome",
+    home: WelcomeWidget(),
+  );
+}
 
 class WelcomeWidget extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Material(
