@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(buildMaterialWidget());
+void main() => runApp(WelcomeWidget());
 
-Widget buildMaterialWidget() {
-  return Material(
-    color: Colors.deepOrange,
-    child: buildTextWidget(),
-  );
-}
+class WelcomeWidget extends StatelessWidget {
 
-Widget buildTextWidget() {
-  return Center(
-    child: Text(
-      'Hello World',
-      textDirection: TextDirection.ltr,
-    ),
-  );
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.deepOrange,
+      child: buildTextWidget(),
+    );
+  }
+
+  Widget buildTextWidget() {
+    return Center(
+      child: Text(
+        'Hello World',
+        textDirection: TextDirection.ltr,
+      ),
+    );
+  }
+
 }
