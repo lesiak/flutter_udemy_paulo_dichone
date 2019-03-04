@@ -17,6 +17,10 @@ class WelcomeWidget extends StatelessWidget {
       child: Text(
         'Hello World',
         textDirection: TextDirection.ltr,
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 30.0,
+        ),
       ),
     );
   }
