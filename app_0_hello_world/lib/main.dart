@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(buildWidget0());
+void main() => runApp(buildMaterialWidget());
 
-Widget buildWidget0() {
+Widget buildMaterialWidget() {
+  return Material(
+    color: Colors.deepOrange,
+    child: buildTextWidget(),
+  );
+}
+
+Widget buildTextWidget() {
   return Center(
     child: Text(
       'Hello World',
