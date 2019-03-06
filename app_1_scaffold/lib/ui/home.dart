@@ -19,6 +19,18 @@ class Home extends StatelessWidget {
         ],
       ),
       backgroundColor: Colors.grey.shade50,
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            InkWell(
+              child: Text('Button'),
+              onTap: () => debugPrint('Button Tapped'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
