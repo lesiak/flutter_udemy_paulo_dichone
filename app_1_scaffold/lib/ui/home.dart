@@ -48,6 +48,12 @@ class Home extends StatelessWidget {
         ],
         onTap: (int index) => debugPrint("Tapped item $index"),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => debugPrint('Floating action button pressed'),
+        backgroundColor: Colors.lightGreen,
+        tooltip: 'Floating action tooltip',
+        child: Icon(Icons.comment),
+      ),
     );
   }
 
