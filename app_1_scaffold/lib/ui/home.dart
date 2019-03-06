@@ -31,6 +31,23 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add),
+            title: Text("Hey"),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.print),
+            title: Text("Print"),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.call_missed),
+            title: Text("Call back"),
+          ),
+        ],
+        onTap: (int index) => debugPrint("Tapped item $index"),
+      ),
     );
   }
 
