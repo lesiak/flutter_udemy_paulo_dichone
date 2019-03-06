@@ -5,7 +5,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amberAccent,
+        backgroundColor: Colors.amberAccent.shade700,
         title: Text('Hello World'),
         actions: <Widget>[
           IconButton(
@@ -18,6 +18,7 @@ class Home extends StatelessWidget {
           )
         ],
       ),
+      backgroundColor: Colors.grey.shade50,
     );
   }
 
